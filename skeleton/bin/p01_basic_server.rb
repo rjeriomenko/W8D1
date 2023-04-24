@@ -1,6 +1,6 @@
 require 'rack'
 
-app = Proc.new do |env|
+app = Proc.new do |env|  #this code still doesn't work, why?
     req = Rack::Request.new(env)
     res = Rack::Response.new 
     res.write(req.path)
